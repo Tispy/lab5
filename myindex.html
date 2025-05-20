@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Резюме - Чередниченко Ілля</title>
+  <link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+  <h1>Чередниченко Ілля</h1>
+  <h2>Контактна інформація Чередниченко Ілля </h2>
+  <p>Винники, вул. Ринок 1 | +380934460934 | cheredaillya@gmail.com</p>
+
+  <h2>Освіта</h2>
+  <ul>
+    <li>Національний університет «Львівська політехніка», Кібербезпека та захист інформації, 2022-2026</li>
+  </ul>
+
+  <h2>Досвід роботи</h2>
+  <ul>
+    <li><p>Відсутній</p></li>
+  </ul>
+
+  <h2>Навички</h2>
+  <ul>
+    <li>Досвідчений користувач Excel</li>
+    <li>Досвідчений користувач Word</li>
+    <li>Основи HTML, структура веб-сторінок</li>
+    <li>Курс з JavaScript</li>
+    <li>SQL, базовий рівень</li>
+    <li>Комп’ютерні мережі</li>
+    <li>Операційні системи</li>
+    <li>Кібербезпека</li>
+    <li>PGP шифрування</li>
+  </ul>
+
+  <h2>Знання мов</h2>
+  <ul>
+    <li>Англійська — B1</li>
+    <li>Українська — Рідна</li>
+  </ul>
+
+  <button id="toggle-theme">Перемкнути тему</button>
+  <button id="open-modal">Залишити відгук</button>
+  <p id="storage-info"></p>
+
+  <!-- Модальне вікно -->
+  <div id="feedback-modal" class="modal hidden">
+    <div class="modal-content">
+      <button onclick="document.getElementById('feedback-modal').classList.add('hidden')">×</button>
+      <h2>Зворотній зв'язок</h2>
+      <form action="https://formspree.io/f/xqaqjjqn" method="POST">
+        <label>Ім’я:<br> <input type="text" name="name" required></label><br>
+        <label>Email:<br> <input type="email" name="email" required></label><br>
+        <label>Телефон:<br> <input type="tel" name="phone" required></label><br>
+        <label>Повідомлення:<br><textarea name="message" rows="4" required></textarea></label><br>
+        <button type="submit">Відправити</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="myscript.js"></script>
+</body>
+</html>
